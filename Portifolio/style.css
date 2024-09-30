@@ -1,0 +1,333 @@
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; 
+    background-color: rgba(11, 11, 11, 0.566);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+  }
+
+ 
+  .background .circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px); 
+    animation: floating 20s infinite ease-in-out;
+  }
+  
+  .esfera1 {
+    width: 320px;
+    height: 320px;
+    top: 20%;
+    left: 10%;
+    background-color: #3d68e973;
+  }
+  
+  .esfera2 {
+    width: 300px;
+    height: 300px;
+    top: 60%;
+    left: 70%;
+    background-color: #122ab578;
+  }
+  
+  .esfera3 {
+    width: 150px;
+    height: 150px;
+    top: 80%;
+    left: 40%;
+    background-color: #1266b5;
+  }
+  
+  @keyframes floating {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-35px) translateX(35px); }
+    100% { transform: translateY(10) translateX(10); }
+  }
+  
+
+  .main-content {
+    position: relative;
+    z-index: 1; 
+    padding: 20px;
+  }
+
+
+
+
+
+
+*{ /* Estilo geral */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+
+{
+    height: 100vh;
+    background-color: rgb(12, 12, 12);
+}
+
+.interface
+{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.flex
+{
+    display: flex;
+}
+
+img
+{
+    width: 80px;
+}
+
+/*-----CABEÇALHO-----*/
+
+header
+{
+    padding: 20px 4%;
+}
+
+header > .interface
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a
+{
+    color: rgb(143, 143, 143);
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s;
+}
+
+header a:hover
+{
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+    box-shadow: 20 20 #fff;
+}
+
+header nav ul
+{
+    list-style-type: none;
+}
+header nav ul li
+{
+    display: inline-block;
+    padding: 0 40px;
+}
+.bt button
+{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 106, 244);
+    border: 0;
+}
+.bt button:hover
+{
+    box-shadow: 0px 0px 25px #060943;
+}
+.bt
+{
+    position: relative;
+    z-index: 2;
+}
+
+section.topo-do-site
+{
+    padding: 120px 4%;
+
+}
+section.topo-do-site .flex
+{
+    align-items: relative;
+}
+.topo-do-site h1
+{
+    color: white;
+    font-size: 40px;
+    line-height: 60px;
+}
+.topo-do-site .txt-topo-site h1 span
+{
+    color: #044aad;
+
+}
+
+.topo-do-site .txt-topo-site p span
+{
+    color: #044aad;
+
+}
+
+h2 span
+{
+    color: #044aad;
+
+}
+
+.topo-do-site p
+{
+    color: white;
+    font-size: 18px;
+    margin: 25px 0;
+
+}
+.topo
+{
+    width: 250px;
+    margin: -40px 180px;
+    border-radius: 50px ;
+    box-shadow: 0 0px 40px rgba(4, 74, 173, 0.5);
+    animation: movimento 2s infinite ease-in-out, rotacao 8s infinite ease-in-out;
+}
+@keyframes movimento {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-80px); /* Move 20px para cima */
+    }
+    100% {
+        transform: translateY(0); /* Volta à posição inicial */
+    }
+}
+
+
+@keyframes rotacao {
+    0% {
+        transform: rotate(0deg); /* Inicia sem rotação */
+    }
+    50% {
+        transform: rotate(5deg); /* Rotaciona 10 graus à direita */
+    }
+    100% {
+        transform: rotate(0deg); /* Volta à posição inicial */
+    }
+}
+section.especialidades
+{
+    padding: 40px 4%;
+}
+h2.Titulo
+{
+    font-size: 38px;
+    text-align: center;
+    margin: 0 0 40px;
+}
+.especialidades 
+{
+    color: white;
+
+}
+.especialidades-box
+{
+    padding: 40px; 
+    border-radius: 20px;
+    flex: 1;
+    background-color: rgba(15, 15, 15, 0.553);
+    
+}
+.icon{
+    height: 60px;
+    width: 60px;
+    color: #044aad;
+}
+
+.especialidades .especialidades-box h3
+{
+font-size: 28px;
+margin: 15px 0;
+
+}
+
+section.especialidades .flex
+{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box:houver
+{
+transform: scale(1.05);
+box-shadow: 0 0 8px;
+}
+
+.especialidades-box p span
+{
+    color: #044aad;
+    font-weight: 100    px ;
+}
+
+.especialidades .especialidades-box:houver
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #fff;
+}
+
+.bt-playlist button
+{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 106, 244);
+    border: 0;
+    margin: 20px 0 0 60px;
+}
+.bt-playlist button:hover
+{
+    box-shadow: 0px 0px 25px #060943;
+}
+.bt-playlist
+{
+    position: relative;
+    z-index: 2;
+}
+.card
+{
+    width: 300px;
+    border-radius: 30px;
+    box-shadow:0 0 40px rgba(51, 106, 244, 0.445);
+    
+}
+.info
+{
+    padding: 40px; 
+    border-radius: 20px;
+    flex: 1;
+    background-color: rgba(15, 15, 15, 0.553);
+}
+.cartao {
+    text-align: center; 
+    background-color: rgba(15, 15, 15, 0.553);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.baixo
+{
+    padding: 10px 100px;
+}
+.especialidades p span
+{
+    color: #044aad;
+}

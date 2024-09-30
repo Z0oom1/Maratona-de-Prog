@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição das Equipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Inscrição das Equipes</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="detalhes.html">Detalhes</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li><a href="realizadas.html">Maratonas Realizadas</a></li>
+                <li><a href="/Portifolio/portifolios.html">Portfólios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inscricao">
+            <h2>Inscreva sua Equipe</h2>
+            <form action="#" method="POST">
+                <label for="nome-equipe">Nome da Equipe:</label>
+                <input type="text" id="nome-equipe" name="nome-equipe" required>
+
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" list="cidades" required>
+                    <datalist id="cidades">
+                        <option value="Presidente Bernardes"></option>
+                        <option value="Presidente Epitácio"></option>
+                        <option value="Presidente Venceslau"></option>
+                        <option value="Quatá"></option>
+                        <option value="Rancharia"></option>
+                        <option value="Regente Feijó"></option>
+                        <option value="Ribeirão dos Índios"></option>
+                        <option value="Rinópolis"></option>
+                        <option value="Sagres"></option>
+                        <option value="Sandovalina"></option>
+                        <option value="Santa Inês"></option>
+                        <option value="Santo Anastácio"></option>
+                        <option value="Santo Expedito"></option>
+                        <option value="Santo Inácio"></option>
+                        <option value="Taciba"></option>
+                        <option value="Tarabai"></option>
+                        <option value="OUTRA"></option>
+                    </datalist>
+                </div>
+
+                <div class="form-group">
+                    <label for="universidade">Universidade:</label>
+                    <input type="text" id="universidade" name="universidade" list="universidades" required>
+                    <datalist id="universidades">
+                        <option value="Uniguairacá"></option>
+                        <option value="FIAETPP"></option>
+                        <option value="UNOESTE"></option>
+                        <option value="UNIFIL"></option>
+                        <option value="UNESP"></option>
+                        <option value="UNIMAR"></option>
+                        <option value="UNICESUMAR"></option>
+                        <option value="UNISANTA"></option>
+                    </datalist>
+                </div>
+
+                <label for="redes-sociais">Redes Sociais:</label>
+                <input type="url" id="redes-sociais" name="redes-sociais" placeholder="URL-da-sua-rede-social" required>
+
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </section>
+
+        <div class="logo-container">
+            <h3>Logo do Time</h3>
+            <div class="logo-upload">
+                <input type="file" accept="image/*">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Maratona de Programação</p>
+    </footer>
+</body>
+
+</html>

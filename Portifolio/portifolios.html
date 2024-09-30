@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <title>Portifolio Caio</title>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="background">
+            <div class="circle esfera1"></div>
+            <div class="circle esfera2"></div>
+            <div class="circle esfera3"></div>
+        </div>
+
+        <header>
+            <div class="interface">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="Logo-Caio">
+                    </a>
+                </div>
+                <nav class="meu-desktop">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#" onclick="scrollDown()">Oque eu gosto</a></li>
+                        <li><a href="#" onclick="scrollDown()">Sobre</a></li>
+                    </ul>
+                </nav>
+                <div class="bt">
+                    <a href="/index.html">
+                        <button>Voltar</button>
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>O Portifolio do <span>Caio Rod</span></h1>
+                        <p>Olá me chamo Caio victor Rodrigues e este é o meu portifólio, feito para a matéria de ambientes de programação da faculdade de sistemas da informação da <span>UNOESTE</span></p>
+
+                        <div class="bt" class="descer">
+                            <button onclick="scrollDown()">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div class="img-topo-site">
+                        <img src="images/pessoa.png" alt="Meu Perfil" class="topo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="section2">
+            <section class="especialidades">
+                <div class="interface">
+                    <h2 class="Titulo">O QUE EU <span>GOSTO</span></h2>
+                    <div class="flex">
+                        <div class="especialidades-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-spotify icon" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+                        </svg>
+                            <h3>Spotify</h3>
+                            <p>Minha playlist do Spotify, que contém as músicas que mais gosto e escuto no meu dia a dia</p>
+                            <div class="bt-playlist">
+                                <a href="https://open.spotify.com/playlist/70RftUJ5pIP2nL0e7MNBgl?si=7461fa11a8a74e09">
+                                    <button>PLAYLIST</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="especialidades-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-joystick icon" viewBox="0 0 16 16">
+                            <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2"/>
+                            <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23"/>
+                        </svg>
+                            <h3>TEMPO LIVRE</h3>
+                            <p>No meu tempo livre curto muito sair com os amigos, e jogar quando estou em casa, gosto dos jogos <span>Valorant</span> e <span>League of legends</span> </p>
+                        </div>
+                        <div class="especialidades-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-square icon" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0"/>
+                        </svg>
+                            <h3>Estudante</h3>
+                            <p>Por mais que meus hobies ocupam um bom tempo da minha vida, sem duvidas oque eu passo mais tempo fazendo é estudando. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script>
+        // descer
+        function scrollDown() {
+            document.getElementById("section2").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
+    <script>
+        // descer
+        function scrollDown() {
+            document.getElementById("section3").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+    <div id="section3">
+        <section class="especialidades">
+            <div class="cartao">
+                <h2 class="Titulo">INFORMAÇÕES <span>ACADEMICAS</span></h2>
+                <img src="images/card.jpg" class="card" alt="Imagem de cartão">
+                <p><span>Nome:</span> Caio Victor Rodrigues</p>
+                <p><span>Idade:</span> 18 Anos</p>
+                <p><span>Curso:</span> Sistemas da Informação</p>
+                <p><span>Termo:</span> 2º Termo</p>
+            </div>
+        </section>
+    </div>
+    </div>
+    <section class="especialidades">
+        <h2 class="Titulo">Sobre <span>MIM</span></h2>
+        <p class="baixo">Estudei na escola <span> SESI-368 / Regente-feijó</span> des do 1 ano do fundamental, fiz parte dos campeonatos de ROBOTICA do time SESI.<br> Antes de iniciar o curso de Sistemas eu sempre fui facinado pelo design grafico e sempre gostei de mecher
+            no Adobe <span>Illustrator</span> e
+            <span>Photoshop</span> por pura diversão, e essa vontade de criar coisas novas me trousse para o curso de SISTEMAS DA INFORMAÇÃO, A sencação de criar algo 100% por você é incrivel e ainda mais se essa criação pode ajudar ou facilitar a vida
+            de outras pessoas.<br> Minhas espectativas com o curso é que daqui 3 anos eu saia formado e com muitas espectativas de futuro com a carreira de programador, criando projetos unicos e <span>ideias novas.</span></p>
+    </section>
+</body>
+
+</html>
